@@ -9,7 +9,9 @@ public class DataServiceTest
     public void TestMethod()
     {
         DataService ds = new();
-        var res = ds.Calculate();
-        Assert.AreEqual(12, res);
+        double x = 1.0;
+        double y = 3.0;
+        var res = ds.Calculate(x, y);
+        Assert.AreEqual(2, res);
     }
 }

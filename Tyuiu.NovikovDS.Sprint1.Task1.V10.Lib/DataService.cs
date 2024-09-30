@@ -2,11 +2,11 @@
 
 namespace Tyuiu.NovikovDS.Sprint1.Task1.V5.Lib
 {
-    public class DataService : ISprint1Task0V5
+    public class DataService : ISprint1Task1V10
     {
-        public double Calculate()
+       public double Calculate(double x, double y)
         {
-            return (1 + 2) * (1 + 9 / 3);
+            return (x + y) / (1 + x);
         }
     }
 
