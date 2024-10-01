@@ -6,7 +6,7 @@ namespace Tyuiu.NovikovDS.Sprint1.Task3.V5.Lib
     {
         public double DistanceLength(double mapScale, double distanceBetweenPoints)
         {
-            return Math.Round(mapScale * distanceBetweenPoints);
+            return Math.Round(mapScale * distanceBetweenPoints, 3);
         }
     }
 
