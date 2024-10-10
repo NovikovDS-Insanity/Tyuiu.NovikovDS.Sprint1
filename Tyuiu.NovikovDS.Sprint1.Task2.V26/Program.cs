@@ -21,11 +21,19 @@ Console.WriteLine("*************************************************************
 
 int x, y;
 
-Console.WriteLine("Введите количество часов:");
-x = Convert.ToInt16(Console.ReadLine());
+do
+{
+    Console.WriteLine("Введите количество часов:");
+    x = Convert.ToInt16(Console.ReadLine());
+    if (x < 0) Console.WriteLine("Количество часов не может быть отрицательным.");
+} while (x < 0);
 
-Console.WriteLine("Введите количество минут:");
-y = Convert.ToInt16(Console.ReadLine());
+do
+{
+    Console.WriteLine("Введите количество минут:");
+    y = Convert.ToInt16(Console.ReadLine());
+    if (y < 0) Console.WriteLine("Количество минут не может быть отрицательным.");
+} while (y < 0);
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");

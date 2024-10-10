@@ -27,5 +27,6 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
 Console.WriteLine("***************************************************************************");
 
-Console.WriteLine(h);
+if (k < 100) Console.WriteLine("Число меньше трёхзначного.");
+else Console.WriteLine(h);
 Console.ReadLine();

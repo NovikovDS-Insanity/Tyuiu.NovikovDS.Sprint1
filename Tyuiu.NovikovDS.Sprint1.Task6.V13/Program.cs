@@ -19,8 +19,13 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
 
-Console.WriteLine("Введите строку:");
-string k = Console.ReadLine().ToLower();
+string k;
+do
+{
+    Console.WriteLine("Введите не пустую строку:");
+    k = Console.ReadLine().ToLower();
+} while (k == "");
+
 bool h = ds.CheckWordsAlphabet(k);
 
 Console.WriteLine("***************************************************************************");

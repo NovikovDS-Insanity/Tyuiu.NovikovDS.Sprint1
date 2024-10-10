@@ -15,12 +15,18 @@ Console.WriteLine("* УСЛОВИЕ:                                            
 Console.WriteLine("* Написать программу, которая вычисляет математическое выражение по       *");
 Console.WriteLine("* исходным значениям данных, вводимых пользователем.                      *");
 Console.WriteLine("* Ответ округлите до 3 знаков после запятой.                              *");
+Console.WriteLine("* Math.Pow((1 + (1 / Math.Pow(x, 2))), x) - (12 * Math.Pow(x, 2) * y)     *");
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
 
-Console.WriteLine("Введите значение X:");
-double x = Convert.ToDouble(Console.ReadLine());
+double x;
+do
+{
+    Console.WriteLine("Введите значение X:");
+    x = Convert.ToDouble(Console.ReadLine());
+    if (x == 0) Console.WriteLine("На ноль делить нельзя.");
+} while (x == 0);
 
 Console.WriteLine("Введите значение Y:");
 double y = Convert.ToDouble(Console.ReadLine());

@@ -21,11 +21,19 @@ Console.WriteLine("*************************************************************
 
 double x, y;
 
-Console.WriteLine("Введите масштаб карты (количество км. в одном см.):");
-x = Convert.ToDouble(Console.ReadLine());
+do
+{
+    Console.WriteLine("Введите масштаб карты (количество км. в одном см.):");
+    x = Convert.ToDouble(Console.ReadLine());
+    if (x < 0) Console.WriteLine("Масштаб карты не может быть меньше нуля.");
+} while (x < 0);
 
-Console.WriteLine("Введите расстояние между точками, изображающими населенные пункты (см):");
-y = Convert.ToDouble(Console.ReadLine());
+do
+{
+    Console.WriteLine("Введите расстояние между точками, изображающими населенные пункты (см):");
+    y = Convert.ToDouble(Console.ReadLine());
+    if (x < 0) Console.WriteLine("Расстояние между точками не может быть меньше нуля.");
+} while (x < 0);
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");

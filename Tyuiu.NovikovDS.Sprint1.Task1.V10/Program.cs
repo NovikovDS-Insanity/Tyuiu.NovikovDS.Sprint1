@@ -21,8 +21,12 @@ Console.WriteLine("*************************************************************
 
 double x, y;
 
-Console.WriteLine("Введите значение X:");
-x = Convert.ToDouble(Console.ReadLine());
+do
+{
+    Console.WriteLine("Введите значение X:");
+    x = Convert.ToDouble(Console.ReadLine());
+    if (x == -1) Console.WriteLine("При X = -1, выражение не имеет значения.");
+} while (x == -1);
 
 Console.WriteLine("Введите значение Y:");
 y = Convert.ToDouble(Console.ReadLine());
