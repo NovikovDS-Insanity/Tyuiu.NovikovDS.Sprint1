@@ -20,11 +20,11 @@ Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                             
 Console.WriteLine("***************************************************************************");
 
 string k;
+Console.WriteLine("Введите не пустую строку:");
 do
 {
-    Console.WriteLine("Введите не пустую строку:");
     k = Console.ReadLine().ToLower();
-} while (k == "");
+} while (string.IsNullOrEmpty(k));
 
 bool h = ds.CheckWordsAlphabet(k);
 

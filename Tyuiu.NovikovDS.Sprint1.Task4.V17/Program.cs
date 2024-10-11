@@ -32,6 +32,6 @@ Console.WriteLine("* РЕЗУЛЬТАТ:                                        
 Console.WriteLine("***************************************************************************");
 
 if (x - 5 * y == 0) Console.WriteLine("На ноль делить нельзя.");
-else if (x - 5 * y < 0) Console.WriteLine("Под корнем может быть только положительное число.");
+else if (x - 5 * y < 0) Console.WriteLine("Под корнем может быть только неотрицательное число.");
 else Console.WriteLine(ds.Calculate(x, y));
 Console.ReadLine();
